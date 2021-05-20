@@ -30,8 +30,6 @@ namespace arraysNew
             }
         }
 
-
-
         static void Main(string[] args)
         {
             List<string> array_strings = new List<string> {"Hello", "users", "about", "C#" };
@@ -42,14 +40,12 @@ namespace arraysNew
                 switch (choice)
                 {
                     case 1:
-                        // codding
                         Console.Write("Введите новую запись: ");
                         string new_item_arrays = Console.ReadLine();
                         array_strings.Add(new_item_arrays);
                         Console.WriteLine("Запись добавленна успешно");
                         break;
                     case 2:
-                        // codding
                         int item_to_remove = _input_index_to_remove();
                         if(item_to_remove > array_strings.Count)
                         {
@@ -62,7 +58,6 @@ namespace arraysNew
                         }
                         break;
                     case 3:
-                        // codding
                         for (int i = 0; i < array_strings.Count; i++)
                         {
                             Console.WriteLine(array_strings[i]);
